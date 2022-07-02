@@ -935,7 +935,7 @@ end
         ["SelectedStands"] = {},
         ["Sell"] = {},
         ["AllItems"] = {"Mysterious Arrow", "Pure Rokakaka", "Rokakaka", "Diamond", "Lucky Arrow", "DEO's Diary", "Steel Ball", "Rib Cage of The Saint's Corpse", "Stone Mask", "Gold Coin", "Quinton's Glove", "Ancient Scroll", "Zepellin's Headband","Green Candy", "Blue Candy", "Yellow Candy", "Red Candy","Christmas Present",},
-        ["AllStands"] = {"White Poison", "Violet Fog", "Six Pistols", "Airsmith", "Scarlet King", "Golden Spirit", "Zipper Fingers", "Ice Album", "Ms. Vice President", "Ocean Boy", "That Hand", "Shining Sapphire", "Deadly King", "Red Hot Chili Pepper", "Violet Vine", "Tentacle Green", "Grey Rapier", "Magician's Ember", "Void", "Platinum Sun", "The Universe", "Anubiz"}
+        ["AllStands"] = {"White Poison", "Violet Fog", "Six Pistols", "Airsmith", "Scarlet King", "Golden Spirit", "Zipper Fingers", "Ice Album", "Ms. Vice President", "Ocean Boy", "That Hand", "Shining Sapphire", "Deadly King", "Red Hot Chili Pepper", "Violet Vine", "Tentacle Green", "Grey Rapier", "Magician's Ember", "Void", "Platinum Sun", "The Universe", "Anubiz", "Stone Free"}
     }
 
     for i,v in pairs(getconnections(Player.Idled)) do
@@ -1294,7 +1294,7 @@ end
                         Data = game:GetService('HttpService'):JSONDecode(readfile("crackedBronzeTreeFarm_1.json"))
                         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") and Player.Character:FindFirstChild("LowerTorso") and Player.Character.LowerTorso:FindFirstChild("Root") and Data["Auto Invis"] then
                             NewBypass()
-                            Player.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(1750.6010742188, 770.61102294922, 28.486907958984))
+                            Player.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(1325.8, 218.441,-777.834))
                             wait(0.5)
                             Player.Character.LowerTorso.Root:Destroy()
                             wait(0.5)
@@ -1878,7 +1878,7 @@ end
     PlayerTab:Button("隐身", "哥们儿防着点时删", function()
         NewBypass()
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") and Player.Character:FindFirstChild("LowerTorso") and Player.Character.LowerTorso:FindFirstChild("Root") then
-            local Place1 = CFrame.new(Vector3.new(1750.6010742188, 770.61102294922, 28.486907958984))
+            local Place1 = CFrame.new(Vector3.new(1325.8, 218.441, -777.834))
             local Place2 = Player.Character.HumanoidRootPart.CFrame
             Player.Character.HumanoidRootPart.CFrame = Place1
             wait(0.5)
@@ -1925,7 +1925,7 @@ PlayerTab:Seperator()
     PlayerTab:Seperator()
 
     LocationsTab:Button("新手乔鲁诺", "将你传送至", function()
-        local Place = CFrame.new(Vector3.new(699.27502441406, 804.35559082031, -217.98083496094))
+        local Place = CFrame.new(Vector3.new(0.165868, 2.96994, -723.482))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
@@ -1933,17 +1933,8 @@ PlayerTab:Seperator()
 
     LocationsTab:Seperator()
 
-    LocationsTab:Button("车站1", "将你传送至车站1", function()
-        local Place = CFrame.new(Vector3.new(841.28497314453, 808.84655761719, -5.2998661994934))
-        if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
-            Player.Character.HumanoidRootPart.CFrame = Place
-        end
-    end)
-
-    LocationsTab:Seperator()
-
-    LocationsTab:Button("车站2", "将你传送至车站2", function()
-        local Place = CFrame.new(Vector3.new(1974.7647705078, 824.18927001953, -66.733573913574))
+    LocationsTab:Button("车站", "将你传送至车站", function()
+        local Place = CFrame.new(Vector3.new(-306.586, 3.29293, 13.072))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
@@ -1952,7 +1943,7 @@ PlayerTab:Seperator()
     LocationsTab:Seperator()
 
     LocationsTab:Button("披萨店", "将你传送至披萨店", function()
-        local Place = CFrame.new(Vector3.new(329.56585693359, 829.95617675781, -8.4268960952759))
+        local Place = CFrame.new(Vector3.new(123.23, 8.92271, 75.5672))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
@@ -1961,7 +1952,7 @@ PlayerTab:Seperator()
     LocationsTab:Seperator()
 
     LocationsTab:Button("游戏厅", "将你传送至游戏厅", function()
-        local Place = CFrame.new(Vector3.new(-122.22664642334, 829.51751708984, -57.270519256592))
+        local Place = CFrame.new(Vector3.new(274.491, 4.74501, -265.167))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
@@ -1970,7 +1961,7 @@ PlayerTab:Seperator()
     LocationsTab:Seperator()
 
     LocationsTab:Button("咖啡馆", "将你传送至咖啡馆", function()
-        local Place = CFrame.new(Vector3.new(-104.49055480957, 828.13500976563, 427.28298950195))
+        local Place = CFrame.new(Vector3.new(-513.438, -22.7378, -174.134))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
@@ -1979,7 +1970,7 @@ PlayerTab:Seperator()
     LocationsTab:Seperator()
 
     LocationsTab:Button("安全地点", "将你传送至安全地点", function()
-        local Place = CFrame.new(Vector3.new(245.009, 1149.66, 1411))
+        local Place = CFrame.new(Vector3.new(1325.8, 218.441, -777.834))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
@@ -1988,7 +1979,7 @@ PlayerTab:Seperator()
     LocationsTab:Seperator()
 
     LocationsTab:Button("天堂", "将你传送至天堂", function()
-        local Place = CFrame.new(Vector3.new(8546.52, 51.9682, 8160))
+        local Place = CFrame.new(Vector3.new(8508.36, -476.209, 8154.22))
         if Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
             Player.Character.HumanoidRootPart.CFrame = Place
         end
